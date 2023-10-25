@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./contarDias.js"></script>
+    <link rel="stylesheet" href="contarDias.css">
+    <title>Calcular dias</title>
+</head>
+<body>
+    <div>
+        <h1>Calcular dias</h1>
+    </div>
+    <section>
+        <div>
+            <h2 class="subTitulo">Digite uma data, então iremos calcular quando dias se passaram desde essa data até o dia de hoje</h2>
+            <input type="date" id="dataAtualId" onchange="dataChange()" placeholder="Digite uma data">
+            <button id="calcular" onclick="calcularData()" aria-placeholder="Gerar resposta">calcular</button>
+            <div class="prompt">
+                <div id="resultado" class="resultado">Resultado</div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
